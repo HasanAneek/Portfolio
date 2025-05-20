@@ -409,8 +409,8 @@ main {
 }
 
 .contact-info {
-  max-width: calc(100% - 46px);
-  width: calc(100% - 46px);
+  max-width: 100%;
+  width: 100%;
 }
 
 .contact-title {
@@ -1853,8 +1853,33 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .contact-info :is(.contact-link) {
     white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    overflow: visible;
+    text-overflow: initial;
+  }
+
+  .email-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+  }
+  .copy-btn {
+    background: var(--bg-gradient-yellow-1);
+    border: none;
+    padding: 6px 10px;
+    border-radius: 8px;
+    box-shadow: var(--shadow-2);
+    cursor: pointer;
+    color: var(--onyx);
+    display: flex;
+    align-items: center;
+    transition: background 0.2s, box-shadow 0.2s;
+    font-size: 1.1em;
+  }
+  .copy-btn:hover {
+    background: var(--bg-gradient-yellow-2);
+    color: var(--white-2);
+    box-shadow: var(--shadow-3);
   }
 
   .contact-info :is(.contact-link, time, address) {

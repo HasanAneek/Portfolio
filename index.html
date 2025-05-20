@@ -80,7 +80,12 @@
                     <div class="contact-info">
                         <p class="contact-title">Email</p>
 
-                        <a href="jahid.onic162@gmail.com" class="contact-link">jahid.onic162@gmail.com</a>
+                        <div class="email-row">
+                            <a href="mailto:jahid.onic162@gmail.com" class="contact-link" id="email-address">jahid.onic162@gmail.com</a>
+                            <button class="copy-btn" onclick="copyEmail()" title="Copy Email">
+                                <ion-icon name="copy-outline"></ion-icon>
+                            </button>
+                        </div>
                     </div>
 
                 </li>
@@ -94,7 +99,7 @@
                     <div class="contact-info">
                         <p class="contact-title">Phone</p>
 
-                        <a href="tel:+8801793-019326" class="contact-link">+8801793-019326</a>
+                        <a href="tel:+8801676401280" class="contact-link">+8801676401280</a>
                     </div>
 
                 </li>
@@ -190,35 +195,28 @@
 
             <section class="about-text">
                 <p>
-                    Hi! Welcome to My Site!
-
+                    Welcome to my website!
                 </p>
-
                 <p>
-                    I am Jahid Hasan. Currently, I have recently accomplished my bachelor's degree in Computer Science and Engineering at North South University(NSU).
+                    I’m Jahid Hasan, a recent Computer Science and Engineering graduate from North South University. I have practical experience designing dynamic applications and implementing efficient algorithms.
                 </p>
-
                 <p>
-                    A committed computer science graduate from North South University, specializing in PHP,
-                    Python, and JavaScript, with a primary focus on web development. Throughout my academic journey, I have
-                    actively engaged in numerous projects, contributing to the creation of dynamic websites and the implementation of algorithms.
-                    My experience has provided me with significant expertise in database
-                    management systems and a solid understanding of software development methodologies. Proficient in
-                    problem-solving, I am eager to apply my skills and contribute to the success of the team as I embark on this
-                    opportunity.
-
+                    With a strong foundation in core computer science principles like data structures, algorithms, and design patterns, I focus on writing clean, modular, and scalable code. I’m skilled in API integration, state management, and collaborating with design teams to create responsive, user-friendly interfaces.
+                </p>
+                <p>
+                    I follow best practices in version control and continuous integration to ensure quality and teamwork. Feel free to explore my site and contact me for any inquiries or opportunities.
                 </p>
 
                 <p>
                     You can explore the details about me throughout this website. Feel free to contact me for any kind of inquiries.
                 </p>
             </section>
-
+<!-- 
             <!--
                       - service
                     -->
-            <!--
-            <!-- <section class="service"> -->
+            <!-- -->
+
 
             <h3 class="h3 service-title">What i'm doing</h3>
 
@@ -327,12 +325,10 @@
 
                     <li class="timeline-item">
 
-                        <h4 class="h4 timeline-item-title">Bachelor of Computer Science And Engineering [January 2018 - November 2022]</h4>
+                        <h4 class="h4 timeline-item-title">Bachelor of Computer Science And Engineering </h4>
 
-                        <span><h4><a href="https://www.iium.edu.my/v2/" target="_blank" style="color: orange;">North South University, Dhaka, Bangladesh</a></h4></span>
-                        <p class="timeline-text">
-                            <b>CGPA: 2.62 /4.0</b>
-                        </p>
+                        <span><h4><a href="https://www.northsouth.edu/" target="_blank" style="color: orange;">North South University, Dhaka, Bangladesh</a></h4></span>
+
 
                         <p class="timeline-text">
                             <u>Final Year Thesis:</u> Arduino based smart stick for the blind and visually impaired people <br>
@@ -340,12 +336,10 @@
                     </li>
                     <li class="timeline-item">
 
-                        <h4 class="h4 timeline-item-title">HIGHER SECONDARY CERTIFICATE (HSC) [ 2012 - 2014]</h4>
+                        <h4 class="h4 timeline-item-title">HIGHER SECONDARY CERTIFICATE (HSC) </h4>
 
-                        <span><h4><a href="https://www.iium.edu.my/v2/" target="_blank" style="color: orange;">Notre Dame College, Dhaka, Bangladesh</a></h4></span>
-                        <p class="timeline-text">
-                            <b>GPA: 5.0 /5.0</b>
-                        </p>
+                        <span><h4><a href="https://ndc.edu.bd/" target="_blank" style="color: orange;">Notre Dame College, Dhaka, Bangladesh</a></h4></span>
+
                     </li>
                 </ol>
             </section>
@@ -374,16 +368,25 @@
                 <ol class="timeline-list">
 
                     <li class="timeline-item">
-                        <h4 class="h4 timeline-item-title">Volunteer TAship [April, 2021 - June, 2022]</h4>
-                        <span>North South University</span>
+                        <h4 class="h4 timeline-item-title">Software Engineer, THEMEXPERT, Dhaka</h4>
+                        <span>November 2024 - February 2025</span>
+                        <ul class="timeline-text">
+                            <li>Design and develop web applications using PHP and MySQL database</li>
+                            <li>Collaborate with cross-functional teams to design, develop, and implement new features and functionality</li>
+                            <li>Write clean, maintainable, and efficient code</li>
+                        </ul>
                     </li>
 
                     <li class="timeline-item">
-
-                        <h4 class="h4 timeline-item-title"> Senior Member of Computer and Engineering Club, [February, 2016 – November, 2017]</h4>
-
-                        <span>North South University</span>
-
+                        <h4 class="h4 timeline-item-title">Remote Job | Full-Stack Web & Mobile Developer</h4>
+                        <span>September 2024 – April 2025</span>
+                        <ul class="timeline-text">
+                            <li>Developed and maintained scalable web applications using Java (Spring Boot), ensuring robust backend functionality and seamless RESTful API integrations.</li>
+                            <li>Designed and implemented cross-platform mobile applications with Flutter for Android and iOS, focusing on performance optimization, responsive UI, and an enhanced user experience.</li>
+                            <li>Integrated PostgreSQL for efficient data management, ensuring reliability and scalability.</li>
+                            <li>Implemented authentication systems, real-time data synchronization, and push notification services to enhance app functionality.</li>
+                            <li>Collaborated with remote teams and clients, adhering to agile methodologies to deliver high-quality software solutions within deadlines.</li>
+                        </ul>
                     </li>
                 </ol>
 
@@ -420,7 +423,7 @@
             </header>
 
             <section class="cv">
-                <iframe src="https://drive.google.com/file/d/1ZZSyDlO-3C9igxnPYT0K9fEirllyZahp/preview" width="830" height="600" allow="autoplay"></iframe>
+                <iframe src="https://drive.google.com/file/d/1N6x7KKYBYHMnVt_1lavj3FRCOJr2OwYf/preview" width="830" height="600" allow="autoplay"></iframe>
 
             </section>
 
@@ -473,7 +476,10 @@
 
 </main>
 
-
+<script src="./assets/js/copy-email.js"></script>
+<!-- Ionicons CDN -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 
 
